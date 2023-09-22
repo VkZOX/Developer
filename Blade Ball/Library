@@ -1,5 +1,5 @@
-if game:GetService("CoreGui"):FindFirstChild("CodeWizards Network") then game:GetService("CoreGui"):FindFirstChild("visualise"):Destroy() end
-if game:GetService("CoreGui"):FindFirstChild("CodeWizards Network") then return end
+if game:GetService("CoreGui"):FindFirstChild("visualise") then game:GetService("CoreGui"):FindFirstChild("visualise"):Destroy() end
+if game:GetService("CoreGui"):FindFirstChild("visualise") then return end
 
 local library = {}
 
@@ -15,7 +15,7 @@ function library.CreateMain()
 	local loops = {}
 
 	local visualise = Instance.new("ScreenGui")
-	visualise.Name = "CodeWizards Network"
+	visualise.Name = "visualise"
 	visualise.Parent = (game:GetService("CoreGui") or gethui())
 	visualise.ResetOnSpawn = false
 	visualise.ZIndexBehavior = Enum.ZIndexBehavior.Global
